@@ -163,6 +163,108 @@ a {
   color: var(--accent);
 }
 
+/* HAMBURGER BUTTON (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* MOBILE DRAWER */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: var(--bg-white);
+  z-index: 2000;
+  padding: 30px 25px;
+  box-shadow: -8px 0 40px rgba(0,0,0,0.15);
+  transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.drawer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.drawer-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s ease;
+}
+
+.drawer-link:hover {
+  color: var(--accent);
+}
+
+.drawer-book {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* DRAWER OVERLAY */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.drawer-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /* FOOTER */
 .footer {
   background-color: var(--primary);
@@ -645,23 +747,21 @@ a {
 
 /* MOBILE STYLES (Max Width: 768px) */
 @media (max-width: 768px) {
-  /* Navbar */
+  /* Navbar: show logo only, hide desktop links, show hamburger */
   .navbar {
-    flex-direction: column;
-    padding: 15px 5%;
-    gap: 10px;
+    flex-direction: row;
+    padding: 14px 5%;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .nav-links {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: none;
   }
   
-  .nav-links .btn {
-    width: 100%;
-    margin-top: 5px;
+  .hamburger {
+    display: flex;
   }
 
   /* Hero & Search */
