@@ -1,0 +1,9 @@
+*.md
+!README.md
+*.csv
+*.txt
+*.zip
+*.mp4
+*.mov
+ExtractedAssets/SE5th - New Website/VIDEOS/
+__MACOSX/

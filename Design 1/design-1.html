@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompano Beach Pointe | Premium Direct Booking</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="design-1.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">Pompano Beach</span>
+                <span class="logo-sub">Pointe</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="#">Units</a>
+            <a href="#">Amenities</a>
+            <a href="#">Reviews</a>
+            <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Premium Boutique Living</h1>
+            <p>Your South Florida Home Away from Home.</p>
+            
+            <div class="search-bar">
+                <div class="search-field">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+                <div class="search-field">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" name="checkout">
+                </div>
+                <div class="search-field">
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="2">
+                </div>
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WELCOME HOME SECTION -->
+    <section class="section about-minimal animate-on-scroll">
+        <div class="minimal-container">
+            <div class="minimal-text">
+                <span class="minimal-eyebrow">The Residences</span>
+                <h2 class="minimal-title">Welcome Home</h2>
+                <div class="minimal-divider"></div>
+                <p class="minimal-lead">Your South Florida home away from home, where coastal comfort meets effortless convenience.</p>
+                <p class="minimal-body">Discover the perfect blend of functionality and style with our selection of studios, one-bedroom, and two-bedroom apartments. Whether you're relocating for work, in between homes, or simply exploring the wonders of Pompano Beach, our fully furnished apartments provide the ideal home away from home.</p>
+            </div>
+            <div class="minimal-image animate-on-scroll delay-2">
+                <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_25.jpg" alt="Pompano Beach Pointe Exterior" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x800?text=Property+Photo'">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED UNITS -->
+    <section class="section">
+        <h2 class="section-title">Featured Units</h2>
+        <div class="units-grid">
+            <div class="unit-card animate-on-scroll delay-1">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbY97MAE.jpeg" alt="Unit 1" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Unit+Image'">
+                </div>
+                <div class="unit-info">
+                    <h3>Luxury 2BR Skyline View</h3>
+                    <p>2 Beds • 2 Baths • Up to 4 Guests</p>
+                    <div class="price">From $250/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+            <div class="unit-card animate-on-scroll delay-2">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYAjMAM.jpeg" alt="Unit 2" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Unit+Image'">
+                </div>
+                <div class="unit-info">
+                    <h3>Modern Studio Retreat</h3>
+                    <p>1 Bed • 1 Bath • Up to 2 Guests</p>
+                    <div class="price">From $150/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+            <div class="unit-card animate-on-scroll delay-3">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/2270 Unit -NW/a0FPl00000fucFuMAI.jpeg" alt="Unit 3" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Unit+Image'">
+                </div>
+                <div class="unit-info">
+                    <h3>Coastal 1BR Getaway</h3>
+                    <p>1 Bed • 1 Bath • Up to 3 Guests</p>
+                    <div class="price">From $190/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+            <div class="unit-card animate-on-scroll delay-4">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYHBMA2.jpeg" alt="Unit 4" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Unit+Image'">
+                </div>
+                <div class="unit-info">
+                    <h3>Sunset View Studio</h3>
+                    <p>1 Bed • 1 Bath • Up to 2 Guests</p>
+                    <div class="price">From $140/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Unit Card 5 -->
+            <div class="unit-card animate-on-scroll delay-1">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_34.jpg" alt="Deluxe Corner Suite" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Property+Photo'">
+                </div>
+                <div class="unit-info">
+                    <h3>Deluxe Corner Suite</h3>
+                    <p>2 Bed • 2 Bath • Up to 5 Guests</p>
+                    <div class="price">From $210/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Unit Card 6 -->
+            <div class="unit-card animate-on-scroll delay-2">
+                <div class="unit-img-wrapper">
+                    <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_35.jpg" alt="Garden View Apartment" class="unit-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Property+Photo'">
+                </div>
+                <div class="unit-info">
+                    <h3>Garden View Apartment</h3>
+                    <p>1 Bed • 1 Bath • Up to 3 Guests</p>
+                    <div class="price">From $160/night</div>
+                    <a href="unit.html" class="btn btn-secondary" style="width: 100%;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section class="section amenities-section animate-on-scroll">
+        <h2 class="section-title">Property Amenities</h2>
+        <div class="amenities-grid">
+            <div class="amenity-item animate-on-scroll delay-1">
+                <svg class="amenity-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                <h4>Resort-Style Pool</h4>
+                <p>Relax and unwind in our heated outdoor pool.</p>
+            </div>
+            <div class="amenity-item animate-on-scroll delay-2">
+                <svg class="amenity-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <h4>Fitness Center</h4>
+                <p>State-of-the-art equipment for your daily workout.</p>
+            </div>
+            <div class="amenity-item animate-on-scroll delay-3">
+                <svg class="amenity-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                <h4>Fast Wi-Fi</h4>
+                <p>High-speed internet for work and entertainment.</p>
+            </div>
+            <div class="amenity-item animate-on-scroll delay-4">
+                <svg class="amenity-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+                <h4>Secure Parking</h4>
+                <p>Complimentary dedicated parking for guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section animate-on-scroll">
+        <div class="cta-container">
+            <div class="cta-review">
+                <div class="stars">★★★★★</div>
+                <p class="review-quote">"Absolutely stunning property. The attention to detail, the location, and the incredible amenities made our stay unforgettable. Will definitely be returning!"</p>
+                <p class="review-author">— Sarah M., Recent Guest</p>
+            </div>
+            <div class="cta-action">
+                <h2>Ready for Your Pompano Beach Getaway?</h2>
+                <p>Book directly with us for the best rates and exclusive perks.</p>
+                <a href="#" class="btn btn-primary">Check Availability</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-main">Pompano Beach</span>
+                        <span class="logo-sub">Pointe</span>
+                    </div>
+                </a>
+                <p style="margin-top: 20px;">Premium boutique rentals offering comfort and convenience for your extended stay.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="tel:9543209267">(954) 320-9267</a></li>
+                    <li><a href="mailto:info@StayPBPointe.com">info@StayPBPointe.com</a></li>
+                    <li>2250 SE 5th Street, Pompano Beach, FL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Pompano Beach Pointe Residences. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="design-1.js"></script>
+</body>
+</html>
