@@ -17,26 +17,28 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
-            <div class="logo-text">
-                <span class="logo-main">Pompano Beach</span>
-                <span class="logo-sub">Pointe</span>
+        <div class="navbar-inner">
+            <a href="#" class="logo">
+                <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">Pompano Beach</span>
+                    <span class="logo-sub">Pointe</span>
+                </div>
+            </a>
+            <!-- Desktop Nav Links -->
+            <div class="nav-links">
+                <a href="#">Units</a>
+                <a href="#">Amenities</a>
+                <a href="#">Reviews</a>
+                <a href="#" class="btn btn-primary">Book Now</a>
             </div>
-        </a>
-        <!-- Desktop Nav Links -->
-        <div class="nav-links">
-            <a href="#">Units</a>
-            <a href="#">Amenities</a>
-            <a href="#">Reviews</a>
-            <a href="#" class="btn btn-primary">Book Now</a>
+            <!-- Hamburger Button (Mobile Only) -->
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <!-- Hamburger Button (Mobile Only) -->
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
     </nav>
 
     <!-- Mobile Drawer Overlay -->
@@ -94,8 +96,13 @@
                 <p class="minimal-lead">Your South Florida home away from home, where coastal comfort meets effortless convenience.</p>
                 <p class="minimal-body">Discover the perfect blend of functionality and style with our selection of studios, one-bedroom, and two-bedroom apartments. Whether you're relocating for work, in between homes, or simply exploring the wonders of Pompano Beach, our fully furnished apartments provide the ideal home away from home.</p>
             </div>
-            <div class="minimal-image animate-on-scroll delay-2">
-                <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_25.jpg" alt="Pompano Beach Pointe Exterior" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x800?text=Property+Photo'">
+            <div class="minimal-images-wrapper animate-on-scroll delay-2">
+                <div class="minimal-img-container img-left-top">
+                    <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_25.jpg" alt="Pompano Beach Pointe Exterior" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x800?text=Property+Photo'">
+                </div>
+                <div class="minimal-img-container img-right-bottom">
+                    <img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_26.jpg" alt="Pompano Beach Pointe Interior" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x800?text=Property+Photo'">
+                </div>
             </div>
         </div>
     </section>
@@ -204,21 +211,255 @@
         </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section class="cta-section animate-on-scroll">
-        <div class="cta-container">
-            <div class="cta-review">
-                <div class="stars">★★★★★</div>
-                <p class="review-quote">"Absolutely stunning property. The attention to detail, the location, and the incredible amenities made our stay unforgettable. Will definitely be returning!"</p>
-                <p class="review-author">— Sarah M., Recent Guest</p>
+    <!-- PRICING SECTION -->
+    <section class="section pricing-section animate-on-scroll">
+        <h2 class="section-title" style="text-align: center;">Simple, Transparent Pricing</h2>
+        <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 50px;">No hidden fees. No surprises. Book directly with us for the best rates guaranteed.</p>
+        <div class="pricing-grid">
+
+            <!-- Short Stay -->
+            <div class="pricing-card animate-on-scroll delay-1">
+                <div class="pricing-badge">Short Stay</div>
+                <div class="pricing-nights">1 – 29 Nights</div>
+                <div class="pricing-price">From <span>$140</span><small>/night</small></div>
+                <ul class="pricing-features">
+                    <li>✓ All utilities included</li>
+                    <li>✓ Fast gigabit Wi-Fi</li>
+                    <li>✓ Resort pool & fitness access</li>
+                    <li>✓ Fully equipped kitchen</li>
+                    <li>✓ Weekly housekeeping</li>
+                </ul>
+                <a href="unit.html" class="btn btn-secondary" style="width:100%; text-align:center;">Browse Units</a>
             </div>
-            <div class="cta-action">
-                <h2>Ready for Your Pompano Beach Getaway?</h2>
-                <p>Book directly with us for the best rates and exclusive perks.</p>
-                <a href="#" class="btn btn-primary">Check Availability</a>
+
+            <!-- Monthly — Featured -->
+            <div class="pricing-card pricing-featured animate-on-scroll delay-2">
+                <div class="pricing-tag">Most Popular</div>
+                <div class="pricing-badge">Monthly Stay</div>
+                <div class="pricing-nights">30+ Nights</div>
+                <div class="pricing-price">From <span>$2,800</span><small>/month</small></div>
+                <ul class="pricing-features">
+                    <li>✓ All utilities included</li>
+                    <li>✓ Fast gigabit Wi-Fi</li>
+                    <li>✓ Resort pool & fitness access</li>
+                    <li>✓ Fully equipped kitchen</li>
+                    <li>✓ Bi-weekly housekeeping</li>
+                    <li>✓ Best rate guaranteed</li>
+                </ul>
+                <a href="unit.html" class="btn btn-primary" style="width:100%; text-align:center; background: var(--accent); color: var(--primary);">Book Monthly</a>
+            </div>
+
+            <!-- Corporate -->
+            <div class="pricing-card animate-on-scroll delay-3">
+                <div class="pricing-badge">Corporate Housing</div>
+                <div class="pricing-nights">Flexible Terms</div>
+                <div class="pricing-price"><span>Custom</span></div>
+                <ul class="pricing-features">
+                    <li>✓ All utilities included</li>
+                    <li>✓ Fast gigabit Wi-Fi</li>
+                    <li>✓ Resort pool & fitness access</li>
+                    <li>✓ Dedicated workspace setup</li>
+                    <li>✓ Weekly housekeeping</li>
+                    <li>✓ Invoicing & receipts provided</li>
+                </ul>
+                <a href="mailto:info@StayPBPointe.com" class="btn btn-secondary" style="width:100%; text-align:center;">Contact Us</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GUEST REVIEWS -->
+    <section class="section reviews-section animate-on-scroll">
+        <h2 class="section-title" style="text-align: center;">Guest Experiences</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars" style="color: var(--accent); margin-bottom: 10px;">★★★★★</div>
+                <p class="review-quote">"Absolutely stunning property. The attention to detail, the location, and the incredible amenities made our stay unforgettable. Will definitely be returning!"</p>
+                <p class="review-author" style="font-weight: 600; color: var(--primary);">— Sarah M., Recent Guest</p>
+            </div>
+            <div class="review-card">
+                <div class="stars" style="color: var(--accent); margin-bottom: 10px;">★★★★★</div>
+                <p class="review-quote">"The perfect home away from home. The kitchen was fully equipped and the Wi-Fi was fast enough for my remote work. Highly recommended."</p>
+                <p class="review-author" style="font-weight: 600; color: var(--primary);">— James T., Corporate Traveler</p>
             </div>
         </div>
     </section>
+
+    <!-- PROPERTY GALLERY -->
+    <section class="section gallery-section animate-on-scroll">
+        <h2 class="section-title" style="text-align: center;">Gallery</h2>
+        <div class="marquee-gallery" id="marquee-gallery">
+            
+            <!-- ROW 1: Left to Right -->
+            <div class="marquee-row" data-direction="1">
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/Pool.jpeg" alt="Resort Pool"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_01.jpg" alt="Lifestyle 1"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_25.jpg" alt="Exterior View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_03.jpg" alt="Lifestyle 3"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_26.jpg" alt="Interior Living"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_04.jpg" alt="Lifestyle 4"></div>
+                </div>
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/Pool.jpeg" alt="Resort Pool"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_01.jpg" alt="Lifestyle 1"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_25.jpg" alt="Exterior View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_03.jpg" alt="Lifestyle 3"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_26.jpg" alt="Interior Living"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_04.jpg" alt="Lifestyle 4"></div>
+                </div>
+            </div>
+
+            <!-- ROW 2: Right to Left -->
+            <div class="marquee-row" data-direction="-1">
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_34.jpg" alt="Bedroom View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_05.jpg" alt="Lifestyle 5"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_35.jpg" alt="Lounge Area"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_06.jpg" alt="Lifestyle 6"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_33.jpg" alt="Second Bedroom"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_11.jpg" alt="Lifestyle 11"></div>
+                </div>
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_34.jpg" alt="Bedroom View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_05.jpg" alt="Lifestyle 5"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_35.jpg" alt="Lounge Area"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_06.jpg" alt="Lifestyle 6"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_33.jpg" alt="Second Bedroom"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_11.jpg" alt="Lifestyle 11"></div>
+                </div>
+            </div>
+
+            <!-- ROW 3: Left to Right -->
+            <div class="marquee-row" data-direction="1">
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_36.jpg" alt="Dining Area"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_12.jpg" alt="Lifestyle 12"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_23.jpg" alt="Balcony View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_13.jpg" alt="Lifestyle 13"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_16.jpg" alt="Lifestyle 16"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_17.jpg" alt="Lifestyle 17"></div>
+                </div>
+                <div class="marquee-track">
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_36.jpg" alt="Dining Area"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_12.jpg" alt="Lifestyle 12"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/SE5TH Property Pictures/2250 SE 5th St_23.jpg" alt="Balcony View"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_13.jpg" alt="Lifestyle 13"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_16.jpg" alt="Lifestyle 16"></div>
+                    <div class="gallery-item"><img src="../ExtractedAssets/SE5th - New Website/PB PICS/Pompano Beach Lifestyle_17.jpg" alt="Lifestyle 17"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOCATION / NEIGHBORHOOD -->
+    <section class="section location-section animate-on-scroll">
+        <div class="location-container">
+            <div class="location-text">
+                <h2 class="section-title">The Neighborhood</h2>
+                <p style="margin-bottom: 20px;">Located in the heart of Pompano Beach, our residences offer unparalleled access to pristine beaches, world-class dining, and vibrant local culture. Experience the perfect balance of tranquil coastal living and city convenience.</p>
+                <ul class="location-highlights" style="list-style: none;">
+                    <li style="margin-bottom: 10px; font-weight: 500; color: var(--primary);">✓ 5 minutes to Pompano Beach Pier</li>
+                    <li style="margin-bottom: 10px; font-weight: 500; color: var(--primary);">✓ 10 minutes to fine dining &amp; shopping</li>
+                    <li style="margin-bottom: 10px; font-weight: 500; color: var(--primary);">✓ 20 minutes to Fort Lauderdale Airport</li>
+                </ul>
+            </div>
+            <div class="location-map">
+                <div class="map-placeholder">
+                    <span>Pompano Beach, FL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PARTNERS -->
+    <section class="section partners-section animate-on-scroll">
+        <h2 class="section-title" style="text-align: center;">Our Partners</h2>
+        <div class="partners-grid">
+            <div class="partner-logo-item">
+                <div class="partner-logo-text pompano-chamber">
+                    <div class="chamber-icon">🏛</div>
+                    <div>
+                        <div class="chamber-title">Greater</div>
+                        <div class="chamber-main">pompano beach</div>
+                        <div class="chamber-sub">CHAMBER OF COMMERCE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-logo-item">
+                <div class="partner-logo-text gobin-group">
+                    <span class="gobin-dg">DG</span>
+                    <div class="gobin-text">
+                        <span class="gobin-the">THE</span>
+                        <span class="gobin-name">GOBIN GROUP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-logo-item">
+                <div class="partner-logo-text compass">
+                    <span class="compass-logo">C<span class="compass-o">O</span>MPASS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT WITH US -->
+    <section class="section contact-section animate-on-scroll">
+        <div class="contact-container">
+            <!-- Left: Form -->
+            <div class="contact-form-col">
+                <p class="contact-tagline">Your South Florida Home Away From Home!</p>
+                <h2 class="section-title">Connect with Us</h2>
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="contact-field">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Your full name">
+                    </div>
+                    <div class="contact-field">
+                        <label for="contact-email">Email <span class="required">*</span></label>
+                        <input type="email" id="contact-email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="contact-field">
+                        <label for="contact-phone">Phone</label>
+                        <input type="tel" id="contact-phone" placeholder="(954) 000-0000">
+                    </div>
+                    <div class="contact-field">
+                        <label for="contact-file">Attach Files</label>
+                        <input type="file" id="contact-file" multiple>
+                    </div>
+                    <button type="submit" class="btn btn-primary contact-submit">Send Message</button>
+                    <p class="recaptcha-note">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</p>
+                </form>
+            </div>
+            <!-- Right: Info -->
+            <div class="contact-info-col">
+                <a href="https://wa.me/19543209267" target="_blank" class="whatsapp-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path></svg>
+                    Message us on WhatsApp
+                </a>
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <strong>Pompano Beach Pointe Residences</strong>
+                            <p>2250 Southeast 5th Street, Pompano Beach, FL 33062</p>
+                            <p>25 NE 19th Avenue, Pompano Beach, FL 33060</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.28-.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:9543209267">(954) 320-9267</a>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:info@StayPBPointe.com">info@StayPBPointe.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- FOOTER -->
     <footer class="footer">

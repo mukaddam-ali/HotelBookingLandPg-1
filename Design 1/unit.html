@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Suite | Pompano Beach Pointe</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="design-1.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="design-1.html" class="logo">
+                <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">Pompano Beach</span>
+                    <span class="logo-sub">Pointe</span>
+                </div>
+            </a>
+            <!-- Desktop Nav Links -->
+            <div class="nav-links">
+                <a href="design-1.html">Units</a>
+                <a href="#">Amenities</a>
+                <a href="#">Reviews</a>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+            <!-- Hamburger Button (Mobile Only) -->
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Mobile Slide-In Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+        <a href="design-1.html" class="drawer-logo">
+            <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">Pompano Beach</span>
+                <span class="logo-sub">Pointe</span>
+            </div>
+        </a>
+        <nav class="drawer-nav">
+            <a href="design-1.html" class="drawer-link">Units</a>
+            <a href="#" class="drawer-link">Amenities</a>
+            <a href="#" class="drawer-link">Reviews</a>
+            <a href="#" class="btn btn-primary drawer-book">Book Now</a>
+        </nav>
+    </div>
+
+    <!-- UNIT HEADER -->
+    <section class="unit-header">
+        <a href="design-1.html" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Residences
+        </a>
+    </section>
+
+    <!-- UNIT GALLERY -->
+    <section class="unit-hero">
+        <div class="unit-gallery">
+            <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbVhWMAU.jpeg" alt="Skyline Suite Living Area" class="unit-main-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x500?text=Main+Property+Image'">
+            <div class="unit-thumbnails">
+                <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbY97MAE.jpeg" alt="Kitchen" class="unit-thumb-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Thumbnail'">
+                <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYAjMAM.jpeg" alt="Bedroom" class="unit-thumb-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Thumbnail'">
+                <div class="unit-thumb-more-wrap">
+                    <img src="../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYDxMAM.jpeg" alt="Bathroom" class="unit-thumb-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250?text=Thumbnail'">
+                    <button class="show-more-btn" id="openLightbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+                        Show All Photos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIT DETAILS & BOOKING -->
+    <section class="unit-details-section">
+        <!-- Content Column -->
+        <div class="unit-content">
+            <div class="unit-title-area">
+                <h1>Skyline Suite</h1>
+                <div class="unit-stats">
+                    <div class="unit-stat-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <div>
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Guests</span>
+                        </div>
+                    </div>
+                    <div class="unit-stat-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                        <div>
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Bedrooms</span>
+                        </div>
+                    </div>
+                    <div class="unit-stat-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="10" y1="5" x2="8" y2="7"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="7" y1="19" x2="7" y2="21"/><line x1="17" y1="19" x2="17" y2="21"/></svg>
+                        <div>
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Bathrooms</span>
+                        </div>
+                    </div>
+                    <div class="unit-stat-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                        <div>
+                            <span class="stat-value">1,200</span>
+                            <span class="stat-label">Sq Ft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="unit-description">
+                <h2>About this Residence</h2>
+                <p>Experience the pinnacle of boutique living in our Skyline Suite. This expansive two-bedroom apartment offers coastal comfort paired with effortless convenience. Designed for the modern professional or family getaway, every detail has been carefully curated to feel like home.</p>
+                <p>Enjoy a fully equipped chef's kitchen, a dedicated ergonomic workspace, and a private balcony overlooking the serene Pompano Beach landscape. With resort-style amenities right at your doorstep, this suite is your ultimate South Florida retreat.</p>
+            </div>
+            
+            <div class="unit-amenities-list">
+                <h2>Amenities</h2>
+                <div class="unit-amenities-grid">
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                        Fast Gigabit Wi-Fi
+                    </div>
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                        Resort-Style Pool
+                    </div>
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        Fitness Center
+                    </div>
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Weekly Housekeeping
+                    </div>
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        All Utilities Included
+                    </div>
+                    <div class="unit-amenity-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+                        Free Secure Parking
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sticky Booking Widget -->
+        <div class="unit-sidebar">
+            <div class="unit-booking-card">
+                <div class="booking-price">
+                    $250 <span>/ night</span>
+                </div>
+                <form class="booking-form">
+                    <div class="search-field">
+                        <label for="stay-type">Stay Type</label>
+                        <select id="stay-type" name="stay-type">
+                            <option value="short">Short Stay (1-29 nights)</option>
+                            <option value="monthly">Monthly Stay (30+ nights)</option>
+                            <option value="corporate">Corporate Housing</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin" name="checkin">
+                    </div>
+                    <div class="search-field">
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout" name="checkout">
+                    </div>
+                    <div class="search-field">
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="4" value="2">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="alert('Redirecting to Stripe to pay 50% holding deposit...')">Reserve &amp; Pay 50% Deposit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="design-1.html" class="logo footer-logo">
+                    <img src="../ExtractedAssets/SE5th - New Website/logo_custom.png" alt="Pompano Beach Pointe Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-main">Pompano Beach</span>
+                        <span class="logo-sub">Pointe</span>
+                    </div>
+                </a>
+                <p style="margin-top: 20px;">Premium boutique rentals offering comfort and convenience for your extended stay.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="design-1.html">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="tel:9543209267">(954) 320-9267</a></li>
+                    <li><a href="mailto:info@StayPBPointe.com">info@StayPBPointe.com</a></li>
+                    <li>2250 SE 5th Street, Pompano Beach, FL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Pompano Beach Pointe Residences. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- PHOTO LIGHTBOX MODAL -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="lightbox-header">
+            <span class="lightbox-counter" id="lightboxCounter">1 / 12</span>
+            <button class="lightbox-close" id="closeLightbox">&times;</button>
+        </div>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <div class="lightbox-img-wrap">
+            <img id="lightboxImg" src="" alt="Unit Photo">
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+        <div class="lightbox-thumbnails" id="lightboxThumbs"></div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="design-1.js"></script>
+    <script>
+        // Lightbox images list
+        const unitImages = [
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbVhWMAU.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbY97MAE.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYAjMAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYDxMAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYFZMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYHBMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYInMAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYKPMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYM1MAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYPFMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYQrMAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYSTMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYU5MAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYVhMAM.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYXJMA2.jpeg',
+            '../ExtractedAssets/SE5th - New Website/2250 Unit -1/a0FPl00000dbYYvMAM.jpeg',
+        ];
+
+        let currentIndex = 0;
+        const overlay = document.getElementById('lightboxOverlay');
+        const img = document.getElementById('lightboxImg');
+        const counter = document.getElementById('lightboxCounter');
+        const thumbsContainer = document.getElementById('lightboxThumbs');
+
+        function openLightbox(index = 0) {
+            currentIndex = index;
+            buildThumbs();
+            updateLightbox();
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightbox() {
+            img.src = unitImages[currentIndex];
+            counter.textContent = `${currentIndex + 1} / ${unitImages.length}`;
+            document.querySelectorAll('.lb-thumb').forEach((t, i) => {
+                t.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function buildThumbs() {
+            thumbsContainer.innerHTML = '';
+            unitImages.forEach((src, i) => {
+                const t = document.createElement('img');
+                t.src = src;
+                t.className = 'lb-thumb' + (i === currentIndex ? ' active' : '');
+                t.addEventListener('click', () => { currentIndex = i; updateLightbox(); });
+                thumbsContainer.appendChild(t);
+            });
+        }
+
+        document.getElementById('openLightbox').addEventListener('click', () => openLightbox(0));
+        document.getElementById('closeLightbox').addEventListener('click', closeLightbox);
+        document.getElementById('lightboxPrev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + unitImages.length) % unitImages.length;
+            updateLightbox();
+        });
+        document.getElementById('lightboxNext').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % unitImages.length;
+            updateLightbox();
+        });
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) closeLightbox(); });
+        document.addEventListener('keydown', (e) => {
+            if (!overlay.classList.contains('active')) return;
+            if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % unitImages.length; updateLightbox(); }
+            if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + unitImages.length) % unitImages.length; updateLightbox(); }
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
